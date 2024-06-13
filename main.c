@@ -92,8 +92,9 @@ void handle_orientation(enum Orientation orientation) {
 
     // transform touch devices
     // (and pray that our lord and savior vaxry won't change hyprctl output)
-    system_fmt("hyprctl keyword input:touchdevice:transform %d", orientation);
-    system_fmt("hyprctl keyword input:tablet:transform %d", orientation);
+    //system_fmt("hyprctl keyword input:touchdevice:transform %d", orientation);
+    //system_fmt("hyprctl keyword input:tablet:transform %d", orientation);
+    // don't know why but screen rotation alone is enough
 }
 
 DBusMessage* request_orientation(DBusConnection* conn) {
